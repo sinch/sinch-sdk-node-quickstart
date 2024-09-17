@@ -1,0 +1,28 @@
+{
+  "name": "sinch-sdk-node-quickstart",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "workspaces": [
+    "getting-started/*",
+    "templates/*",
+    "tutorials/*"
+  ],
+  "scripts": {
+    "lint": "npx eslint .",
+    "compile": "lerna run compile"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.10.0",
+    "@types/node": "^22.5.5",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-deprecation": "^3.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.9.0",
+    "lerna": "^8.1.8",
+    "typescript": "^5.6.2"
+  }
+}
