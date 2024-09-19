@@ -11,7 +11,8 @@
     "baseUrl": ".",
     "noEmit": true,
     "skipLibCheck": true,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "strictNullChecks": false
   },
   "include": [
     "**/*.js"
