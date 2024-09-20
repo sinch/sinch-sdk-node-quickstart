@@ -27,8 +27,9 @@ Edit the [.env](.env) file to set the parameters that will be used to configure 
 
 ### Starting the server
 
-1. Edit the `.env` file with your own parameters (see the paragraph above for details).
-2. Run the code with one of the following commands:
+1. Install the dependencies by running the command `npm install`.
+2. Edit the `.env` file with your own parameters (see the paragraph above for details).
+3. Run the code with one of the following commands:
   - `npm start`
   - `node src/server.js`
 
