@@ -1,11 +1,9 @@
 import { validateSignature } from './validateSignature.js';
 import { VoiceCallbackWebhooks } from '@sinch/sdk-core';
 import {
-  handleAnsweredCallEvent,
   handleDisconnectedCallEvent,
   handleIncomingCallEvent,
   handleNotifyEvent,
-  handlePromptInputEvent,
 } from './serverBusinessLogic.js';
 
 export const voiceController = (app, sinchClientParameters) => {
@@ -19,12 +17,6 @@ export const voiceController = (app, sinchClientParameters) => {
     switch (event.event) {
       case 'ice':
         response = handleIncomingCallEvent(event);
-        break;
-      case 'ace':
-        response = handleAnsweredCallEvent(event);
-        break;
-      case 'pie':
-        response = handlePromptInputEvent(event);
         break;
       case 'dice':
         response = handleDisconnectedCallEvent(event);
