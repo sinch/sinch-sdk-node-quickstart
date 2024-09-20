@@ -27,14 +27,3 @@ export const handleDisconnectedCallEvent = (diceRequest) => {
 
   return '';
 };
-
-/**
- * Handles a notification event.
- * @param { Voice.NotifyRequest } notifyRequest - The incoming notify event object
- * @return {string} An empty string as a response to the notify event.
- */
-export const handleNotifyEvent = (notifyRequest) => {
-  console.log(`Handling 'notify' event:\n${JSON.stringify(notifyRequest, null, 2)}`);
-
-  return '';
-};
