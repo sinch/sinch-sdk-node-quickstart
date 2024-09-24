@@ -1,0 +1,5 @@
+{
+  "packages": ["getting-started/**/*", "templates/*", "tutorials/*"],
+  "npmClient": "npm",
+  "version": "independent"
+}
