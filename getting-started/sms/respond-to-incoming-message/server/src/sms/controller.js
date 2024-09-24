@@ -23,4 +23,4 @@ export const smsController = (app, sinchClientParameters) => {
     }
     res.status(200).json();
   });
-}
+};
