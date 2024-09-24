@@ -24,8 +24,9 @@ Edit [.env](.env) file to set the credentials that will be used to configure the
 
 ## Usage
 
-1. Edit the `.env` file with your own credentials (see the paragraph above for details).
-2. Replace the content of the `snippet.js` file of the API you want to use with your own code (you can find some snippets examples for each API endpoint in the following repository: https://github.com/sinch/sinch-sdk-node-snippets)
-3. Run the code with one of the following commands:
+1. Install the dependencies by running the command `npm install`.
+2. Edit the `.env` file with your own credentials (see the paragraph above for details).
+3. Replace the content of the `snippet.js` file of the API you want to use with your own code (you can find some snippets examples for each API endpoint in the following repository: https://github.com/sinch/sinch-sdk-node-snippets)
+4. Run the code with one of the following commands:
   - `npm start`
   - `node src/app.js`
