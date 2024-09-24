@@ -21,10 +21,10 @@ export const voiceController = (app) => {
 
     // Ensure the authentication is valid before processing the request
     const validAuth = voiceCallbackWebhooks.validateAuthenticationHeader(
-        req.headers,
-        req.rawBody,
-        '/VoiceEvent',
-        'POST',
+      req.headers,
+      req.rawBody,
+      '/VoiceEvent',
+      'POST',
     );
 
     // Authentication header failed
