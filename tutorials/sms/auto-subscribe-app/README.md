@@ -35,8 +35,9 @@ In case you want to use the [SMS API](https://developers.sinch.com/docs/sms/) wi
 
 ### Starting the server locally
 
-1. Edit the `.env` file with your own parameters (see the paragraph above for details).
-2. Start the server with the following command:
+1. Install the dependencies by running the command `npm install`.
+2. Edit the `.env` file with your own parameters (see the paragraph above for details).
+3. Start the server with the following command:
 ```bash
 npm start
 ```

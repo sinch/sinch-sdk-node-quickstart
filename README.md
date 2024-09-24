@@ -19,4 +19,5 @@ This repository contains tutorials and projects' templates related to the [Sinch
     - Verification: User verification using SMS PIN ([link](https://developers.sinch.com/docs/verification/getting-started/node-sdk/sms-verification/))
     - Voice: Respond to an incoming call ([link](https://developers.sinch.com/docs/voice/getting-started/node-sdk/incoming-call/))
   - [tutorials](./tutorials)
-    - Coming soon ⏳
+    - SMS: Auto-subscribe to a group ([link](https://developers.sinch.com/docs/sms/tutorials/))
+    - Voice: Qualify leads ([link](https://developers.sinch.com/docs/sms/tutorials/))
