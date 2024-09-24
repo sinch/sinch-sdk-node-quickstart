@@ -1,6 +1,6 @@
 import { SmsCallbackWebhooks } from '@sinch/sdk-core';
 import { validateSignature } from './utils.js';
-import { processInboundEvent } from './auto-subsribe-service.js';
+import { processInboundEvent } from './auto-subscribe-service.js';
 
 export const autoSubscribeController = (app, sinchClient) => {
 
