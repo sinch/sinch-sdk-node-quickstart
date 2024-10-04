@@ -9,12 +9,14 @@
     "tutorials/*"
   ],
   "scripts": {
-    "lint": "npx eslint .",
+    "lint": "npx eslint . --ignore-pattern eslint.config.mjs",
     "compile": "lerna run compile"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.10.0",
+    "@typescript-eslint/eslint-plugin": "^8.7.0",
+    "@typescript-eslint/parser": "^8.7.0",
     "@types/node": "^22.5.5",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^9.1.0",

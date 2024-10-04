@@ -6,10 +6,10 @@
   "type": "module",
   "scripts": {
     "start": "node src/app.js",
-    "compile": "tsc"
+    "compile": "npm install && tsc"
   },
   "dependencies": {
-    "@sinch/sdk-core": "^1.1.0",
+    "@sinch/sdk-core": "^1.2.0",
     "dotenv": "^16.4.5",
     "inquirer": "^9.2.14"
   }
