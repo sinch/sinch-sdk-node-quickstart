@@ -4,17 +4,17 @@ import { Voice } from '@sinch/sdk-core';
 /**
  * Handles an Incoming Call Event (ICE).
  * @param {Voice.IceRequest} iceRequest - The incoming ICE request object.
- * @return {string} The formatted ICE response to handle the incoming call.
+ * @return {Voice.IceResponse} The formatted ICE response to handle the incoming call.
  */
 export const handleIncomingCallEvent = (iceRequest) => {
   console.log(`Handling 'ICE' event:\n${JSON.stringify(iceRequest, null, 2)}`);
 
   const instruction = 'Thank you for calling your Sinch number. You have just handled an incoming call.';
 
-  return Voice.customCalloutHelper.formatIceResponse(
-    Voice.iceActionHelper.hangup(),
-    Voice.iceInstructionHelper.say(instruction),
-  );
+  return new Voice.IceSvamletBuilder()
+    .setAction(Voice.iceActionHelper.hangup())
+    .addInstruction(Voice.iceInstructionHelper.say(instruction))
+    .build();
 };
 
 /**
