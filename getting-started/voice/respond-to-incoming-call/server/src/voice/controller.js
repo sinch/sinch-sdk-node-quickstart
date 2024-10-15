@@ -9,7 +9,7 @@ export const voiceController = (app, sinchClientParameters) => {
   app.post('/VoiceEvent', validateSignature(voiceCallbackWebhooks), async (req, res) => {
 
     const event = voiceCallbackWebhooks.parseEvent(req.body);
-    let response = '';
+    let response;
     switch (event.event) {
       case 'ice':
         response = handleIncomingCallEvent(event);
